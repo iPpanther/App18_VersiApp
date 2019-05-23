@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		0109B36320C495527538E905 /* Pods_VersiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE6DCF8286FDD4CECAA11BD /* Pods_VersiApp.framework */; };
 		D239FE8E2296B3A600667B26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FE8D2296B3A600667B26 /* AppDelegate.swift */; };
-		D239FE902296B3A600667B26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FE8F2296B3A600667B26 /* ViewController.swift */; };
+		D239FE902296B3A600667B26 /* TrendingFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FE8F2296B3A600667B26 /* TrendingFeedVC.swift */; };
 		D239FE932296B3A600667B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D239FE912296B3A600667B26 /* Main.storyboard */; };
 		D239FE952296B3A700667B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D239FE942296B3A700667B26 /* Assets.xcassets */; };
 		D239FE982296B3A700667B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D239FE962296B3A700667B26 /* LaunchScreen.storyboard */; };
+		D239FEA32296B75200667B26 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FEA22296B75200667B26 /* SearchVC.swift */; };
+		D239FEA62296C47200667B26 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FEA42296C47200667B26 /* RoundedBorderButton.swift */; };
+		D239FEA72296C47200667B26 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FEA52296C47200667B26 /* RoundedBorderTextField.swift */; };
+		D239FEA92296C73000667B26 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FEA82296C73000667B26 /* Repo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +24,15 @@
 		A57B93DF8FB84E0CE0ADDA4C /* Pods-VersiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersiApp.debug.xcconfig"; path = "Target Support Files/Pods-VersiApp/Pods-VersiApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D239FE8A2296B3A600667B26 /* VersiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VersiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D239FE8D2296B3A600667B26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D239FE8F2296B3A600667B26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D239FE8F2296B3A600667B26 /* TrendingFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingFeedVC.swift; sourceTree = "<group>"; };
 		D239FE922296B3A600667B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D239FE942296B3A700667B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D239FE972296B3A700667B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D239FE992296B3A700667B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D239FEA22296B75200667B26 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		D239FEA42296C47200667B26 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
+		D239FEA52296C47200667B26 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
+		D239FEA82296C73000667B26 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		EEE6DCF8286FDD4CECAA11BD /* Pods_VersiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,7 +54,6 @@
 				A57B93DF8FB84E0CE0ADDA4C /* Pods-VersiApp.debug.xcconfig */,
 				634825DD1A08EA438A7FA66E /* Pods-VersiApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,7 +101,8 @@
 		D239FE9F2296B46A00667B26 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D239FE8F2296B3A600667B26 /* ViewController.swift */,
+				D239FE8F2296B3A600667B26 /* TrendingFeedVC.swift */,
+				D239FEA22296B75200667B26 /* SearchVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,6 +110,8 @@
 		D239FEA02296B49400667B26 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D239FEA42296C47200667B26 /* RoundedBorderButton.swift */,
+				D239FEA52296C47200667B26 /* RoundedBorderTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 		D239FEA12296B49900667B26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D239FEA82296C73000667B26 /* Repo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,8 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D239FE902296B3A600667B26 /* ViewController.swift in Sources */,
+				D239FEA32296B75200667B26 /* SearchVC.swift in Sources */,
+				D239FEA72296C47200667B26 /* RoundedBorderTextField.swift in Sources */,
+				D239FE902296B3A600667B26 /* TrendingFeedVC.swift in Sources */,
+				D239FEA92296C73000667B26 /* Repo.swift in Sources */,
 				D239FE8E2296B3A600667B26 /* AppDelegate.swift in Sources */,
+				D239FEA62296C47200667B26 /* RoundedBorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
