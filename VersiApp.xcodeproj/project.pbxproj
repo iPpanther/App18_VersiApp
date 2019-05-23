@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0109B36320C495527538E905 /* Pods_VersiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE6DCF8286FDD4CECAA11BD /* Pods_VersiApp.framework */; };
 		D239FE8E2296B3A600667B26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FE8D2296B3A600667B26 /* AppDelegate.swift */; };
 		D239FE902296B3A600667B26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FE8F2296B3A600667B26 /* ViewController.swift */; };
 		D239FE932296B3A600667B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D239FE912296B3A600667B26 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		634825DD1A08EA438A7FA66E /* Pods-VersiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersiApp.release.xcconfig"; path = "Target Support Files/Pods-VersiApp/Pods-VersiApp.release.xcconfig"; sourceTree = "<group>"; };
+		A57B93DF8FB84E0CE0ADDA4C /* Pods-VersiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersiApp.debug.xcconfig"; path = "Target Support Files/Pods-VersiApp/Pods-VersiApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D239FE8A2296B3A600667B26 /* VersiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VersiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D239FE8D2296B3A600667B26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D239FE8F2296B3A600667B26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D239FE942296B3A700667B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D239FE972296B3A700667B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D239FE992296B3A700667B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE6DCF8286FDD4CECAA11BD /* Pods_VersiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0109B36320C495527538E905 /* Pods_VersiApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		286A3FF1B045761A27092621 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A57B93DF8FB84E0CE0ADDA4C /* Pods-VersiApp.debug.xcconfig */,
+				634825DD1A08EA438A7FA66E /* Pods-VersiApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A42162018B4E3244486A19D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEE6DCF8286FDD4CECAA11BD /* Pods_VersiApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D239FE812296B3A600667B26 = {
 			isa = PBXGroup;
 			children = (
 				D239FE8C2296B3A600667B26 /* VersiApp */,
 				D239FE8B2296B3A600667B26 /* Products */,
+				286A3FF1B045761A27092621 /* Pods */,
+				A42162018B4E3244486A19D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,38 @@
 		D239FE8C2296B3A600667B26 /* VersiApp */ = {
 			isa = PBXGroup;
 			children = (
+				D239FEA12296B49900667B26 /* Model */,
+				D239FEA02296B49400667B26 /* View */,
+				D239FE9F2296B46A00667B26 /* Controller */,
 				D239FE8D2296B3A600667B26 /* AppDelegate.swift */,
-				D239FE8F2296B3A600667B26 /* ViewController.swift */,
 				D239FE912296B3A600667B26 /* Main.storyboard */,
 				D239FE942296B3A700667B26 /* Assets.xcassets */,
 				D239FE962296B3A700667B26 /* LaunchScreen.storyboard */,
 				D239FE992296B3A700667B26 /* Info.plist */,
 			);
 			path = VersiApp;
+			sourceTree = "<group>";
+		};
+		D239FE9F2296B46A00667B26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D239FE8F2296B3A600667B26 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D239FEA02296B49400667B26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D239FEA12296B49900667B26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D239FE9C2296B3A700667B26 /* Build configuration list for PBXNativeTarget "VersiApp" */;
 			buildPhases = (
+				F77C966A96808CEF3815022C /* [CP] Check Pods Manifest.lock */,
 				D239FE862296B3A600667B26 /* Sources */,
 				D239FE872296B3A600667B26 /* Frameworks */,
 				D239FE882296B3A600667B26 /* Resources */,
+				9AE7F89E9263988274CADBC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +180,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AE7F89E9263988274CADBC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VersiApp/Pods-VersiApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VersiApp/Pods-VersiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F77C966A96808CEF3815022C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VersiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D239FE862296B3A600667B26 /* Sources */ = {
@@ -280,6 +386,7 @@
 		};
 		D239FE9D2296B3A700667B26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57B93DF8FB84E0CE0ADDA4C /* Pods-VersiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +405,7 @@
 		};
 		D239FE9E2296B3A700667B26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634825DD1A08EA438A7FA66E /* Pods-VersiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
