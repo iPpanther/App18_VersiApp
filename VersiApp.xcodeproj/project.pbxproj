@@ -21,6 +21,7 @@
 		D239FEA62296C47200667B26 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FEA42296C47200667B26 /* RoundedBorderButton.swift */; };
 		D239FEA72296C47200667B26 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FEA52296C47200667B26 /* RoundedBorderTextField.swift */; };
 		D239FEA92296C73000667B26 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239FEA82296C73000667B26 /* Repo.swift */; };
+		D2E8B6C622993BC200B4E493 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8B6C322993BC200B4E493 /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		D239FEA42296C47200667B26 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
 		D239FEA52296C47200667B26 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
 		D239FEA82296C73000667B26 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		D2E8B6C322993BC200B4E493 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		EEE6DCF8286FDD4CECAA11BD /* Pods_VersiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 		D239FE8C2296B3A600667B26 /* VersiApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2E8B6C122993B9600B4E493 /* Extensions */,
 				D2063DF02297F2100046D089 /* Utilities */,
 				D2063DEF2297F2060046D089 /* Services */,
 				D239FEA12296B49900667B26 /* Model */,
@@ -150,6 +153,14 @@
 				D239FEA82296C73000667B26 /* Repo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D2E8B6C122993B9600B4E493 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2E8B6C322993BC200B4E493 /* UIViewControllerExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D239FEA32296B75200667B26 /* SearchVC.swift in Sources */,
+				D2E8B6C622993BC200B4E493 /* UIViewControllerExt.swift in Sources */,
 				D2063DF6229813170046D089 /* SearchCell.swift in Sources */,
 				D2063DEE2297EEC60046D089 /* TrendingRepoCell.swift in Sources */,
 				D239FEA72296C47200667B26 /* RoundedBorderTextField.swift in Sources */,

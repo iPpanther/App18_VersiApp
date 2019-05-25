@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TrendingRepoCell: UITableViewCell {
     
@@ -20,8 +22,10 @@ class TrendingRepoCell: UITableViewCell {
     @IBOutlet weak var viewReadmeBtn: RoundedBorderButton!
     
     private var repoUrl: String?
+    var disposeBag = DisposeBag()
     
     func configureCell(repo: Repo) {
+        
         repoImageView.image = repo.image
         repoNameLbl.text = repo.name
         repoDescLbl.text = repo.description
@@ -29,6 +33,10 @@ class TrendingRepoCell: UITableViewCell {
         languageLbl.text = repo.language
         contributorsLbl.text = String(describing: repo.numberOfContributors)
         repoUrl = repo.repoUrl
+        
+        viewReadmeBtn.rx.tap.subscribe(onNext: {
+            self.window?.rootViewController?.presentSafariWebViewFor(url: self.repoUrl!)
+        }).disposed(by: disposeBag)
     }
     
     override func layoutSubviews() {
